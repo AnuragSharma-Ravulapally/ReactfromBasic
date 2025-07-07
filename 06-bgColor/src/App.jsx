@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 
 function App() {
@@ -6,11 +5,12 @@ function App() {
 
   return (
     <div
-      className="w-full h-screen duration-300 transition-colors"
+      className="w-screen h-screen duration-300 transition-colors"
       style={{ backgroundColor: color }}
     >
       <div className="fixed flex justify-center px-4 bottom-12">
         <div className="flex gap-4 bg-white shadow-2xl px-3 py-3 rounded-2xl border border-gray-200">
+
           <button
             onClick={() => setColor("red")}
             style={{ backgroundColor: "red" }}
@@ -42,6 +42,15 @@ function App() {
           >
             Orange
           </button>
+
+          <button
+            onClick={() => setColor("grey")}
+            style={{ backgroundColor: "grey" }}
+            className="px-5 py-2 rounded-full text-white font-semibold shadow-md transition transform active:scale-95"
+          >
+            Grey
+          </button>
+
         </div>
       </div>
     </div>
